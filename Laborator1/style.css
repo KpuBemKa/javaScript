@@ -1,0 +1,17 @@
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+.aside {
+    width: 60%;
+}
+
+.content {
+    width: 40%;
+}
