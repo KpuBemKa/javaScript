@@ -1,0 +1,23 @@
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+.aside {
+    width: 60%;
+}
+
+.content {
+    width: 40%;
+}
+
+.squaretalbe{
+    width: 300px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
