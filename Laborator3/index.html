@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborator3</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>
+                Exercitiul:
+            </th>
+            <th>
+                Rezolvarea:
+            </th>
+        </tr>
+
+        <tr>
+            <td class="aside">
+                1. Data:
+            </td>
+            <td class="content">
+                <br>
+                <form>  
+                    <button type="button" onclick="current()">Timpul curent</button>
+                    <button type="button" onclick="yesterday()">O zi in trecut</button>
+                    <button type="button" onclick="year()">Un an in trecut</button>
+                    <button type="button" onclick="week()">O samptamana in trecut</button>
+                </form>
+                <p id="1p">Apasa pe buton pentru a calcula timpul</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="aside">
+                2. Impartirea numarului de telefon  |  ex.: (555) 555-5555:
+            </td>
+            <td class="content">
+                <br>
+                <form>  
+                    Numarul de telefon: <input type="text" id="2number"><br>
+                </form>
+                <p onClick="second()" id="2p">Apasa aici pentru a imparti</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="aside">
+                3. Cautarea caracterului:
+            </td>
+            <td class="content">
+                <br>
+                <form>  
+                    <textarea id="3text" cols="50">textul de transformat</textarea><br>
+                    Caracterul de cautat: <input id="3char" class="char3 " type="text">
+                </form>
+                <p onClick="third()" id="3p">Apasa aici pentru a cauta</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="aside">
+                4. Cautarea caracterelor:
+            </td>
+            <td class="content">
+                <br>
+                <form>  
+                    <textarea id="4text" cols="50">textul de cautat</textarea><br>
+                </form>
+                <p onClick="fourth()" id="p4">Apasa aici pentru a gasi toate caracterele</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="aside">
+                5. Cont:
+            </td>
+            <td class="content">
+                <br>
+                <form>  
+                    Initializarea contului: <input value="valoarea" class="contInput" type="text" id="balInit" onclick="clearValue('balInit')"> <input type="button" onclick="createCont()" value="Initializeaza"><br>
+                    Crediteaza contul: <input value="valoarea" class="contInput" type="text" id="balCredit" onclick="clearValue('balCredit')"> <input type="button" onclick="creditCont()" value="Crediteaza"><br>
+                    Debiteaza contul: <input value="valoarea" class="contInput" type="text" id="balDebit" onclick="clearValue('balDebit')"> <input type="button" onclick="debitCont()" value="Debiteaza"><br>
+                    <hr>
+                </form>
+                <p id="p5">Balanta contului: </p>
+                <p id="b5">[ nu exista cont ]</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

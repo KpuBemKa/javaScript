@@ -1,0 +1,49 @@
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+p{
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+.aside {
+    width: 50%;
+}
+
+.content {
+    width: 50%;
+}
+
+.char3{
+    width: 10px;
+    text-align: center;
+}
+
+.contInput{
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.squaretalbe{
+    width: 300px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#p4{
+    font-family: Consolas;
+}
+
+#p5, #b5{
+    display: inline;
+    margin-bottom: 10px;
+}
