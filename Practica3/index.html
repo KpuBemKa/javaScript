@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8";>
+        <link rel = "stylesheet" href = "css.css">
+        <title>Lucrarea practica 3</title>
+        <script src="script.js"></script>
+    </head>
+    
+    <body>
+        <div class = "dForm">
+            <form name="myForm" id="myForm" onsubmit="return false">
+                <table class="tInfo">
+                    <tr>
+                        <td colspan="4">
+                            <u><h3>I. Date generale</h3></u>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="labels">
+                            <label for = "fName">1. Numele:</label>
+                        </td>
+                        <td colspan="3">
+                            <input type = "text" id = "fName" name = "fName"><br>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="labels">
+                            <label for = "lName">2. Prenumele:</label>
+                        </td>
+                        <td colspan="3">
+                            <input type = "text" id = "lName" name = "lName">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="labels">
+                            <label for="gender"><h4>3. Sexul:</h4></label>
+                        </td>
+                        <td class="radio" colspan="3">
+                            <input type="radio" name="gender" value="Masculin" checked="checked">Masculin
+                            <input type="radio" name="gender" value="Feminin">Feminin
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="labels">
+                            <label for="birthday">4. Data nașterii:</label>
+                        </td>
+                        <td colspan="3">
+                            <input type="date" id="birthday" name="birthday">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="3" class="adress">
+                            <h4>5. Domiciliul:</h4>
+                        </td>
+                        <td>
+                            <label for="judet">Județul:</label>
+                        </td>
+                        <td colspan="2">
+                            <input type="text" id="judet" name="judet">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="localitatea">Localitatea:</label>
+                        </td>
+                        <td colspan="2">
+                            <input type="text" id="localitatea" name="localitatea">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="strada">Strada:</label>
+                        </td>
+                        <td colspan="2">
+                            <input type="text" id="strada" name="strada">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="labels">
+                            <label for = "number">6. Telefonul:</label>
+                        </td>
+                        <td colspan="3">
+                            <input type="number" id="number" name="number">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="labels">
+                            <label for="group">7. E-mail:</label>
+                        </td>
+                        <td colspan="3">
+                            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="labels">
+                            <label for="curs">8. Culoarea favorita:</label>
+                        </td>
+                        <td>
+                            <input type="color" id="favcolor" name="favcolor">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="labels">
+                            <label for="country">9. Am cetatenie:</label>
+                        </td>
+                        <td colspan="2">
+                            <input type="checkbox" id="ro" name="country" value="Romana">Romana
+                            <input type="checkbox" id="md" name="country" value="Moldovana">Moldovana
+                            <input type="checkbox" id="ru" name="country" value="Rusa">Rusa
+                            <input type="checkbox" id="ua" name="country" value="Ucraineana">Ucraineana
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4">
+                            <hr>
+                            <u><h3>II. Studii</h3></u>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="labels">
+                            <label class="inline" for="school">Școala absolvită:</label>
+                        </td>
+                        <td>
+                            <input class="short" type="text" id="school" name="school">
+                        </td>
+                        <td class="labels2">
+                            <label for="year">Anul:</label>
+                        </td>
+                        <td>
+                            <input class="short" type="number" id="year" name="year">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4">
+                            <hr>
+                            <u><h3>III. Limbi posedate</h3></u>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="labels">
+                            <label for="romanian">L. română:</label>
+                        </td>
+                        <td>
+                            <select id="romanian" name="romanian">
+                                <option value="Perfect">Perfect</option>
+                                <option value="Bine">Bine</option>
+                                <option value="Slab">Slab</option>
+                                <option value="Nu cunosc">Nu cunosc</option>
+                            </select>
+                        </td>
+                        <td class="labels2">
+                            <label for="english">L. engleză:</label>
+                        </td>
+                        <td>
+                            <select id="english" name="english">
+                                <option value="Perfect">Perfect</option>
+                                <option value="Bine">Bine</option>
+                                <option value="Slab">Slab</option>
+                                <option value="Nu cunosc">Nu cunosc</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="labels">
+                            <label for="russian">L. rusă:</label>
+                        </td>
+                        <td>
+                            <select id="russian" name="russian">
+                                <option value="Perfect">Perfect</option>
+                                <option value="Bine">Bine</option>
+                                <option value="Slab">Slab</option>
+                                <option value="Nu cunosc">Nu cunosc</option>
+                            </select>
+                        </td>
+                        <td class="labels2">
+                            <label for="french">L. franceză:</label>
+                        </td>
+                        <td>
+                            <select id="french" name="french">
+                                <option value="Perfect">Perfect</option>
+                                <option value="Bine">Bine</option>
+                                <option value="Slab">Slab</option>
+                                <option value="Nu cunosc">Nu cunosc</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4">
+                            <hr>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="OK" onclick="checkForm()">
+                        </td>
+                        <td>
+                            <input type="reset" value="Cancel">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <h2 class="center-text">Datele dvs:</h2>
+        <p id="selected">Nu ati selectat nimic</p>
+    </body>
+</html>
