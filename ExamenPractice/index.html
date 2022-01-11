@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penzari Marc Examen</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <table id>
+            <form>
+                <tr>
+                    <td colspan="4" class="title">
+                        <h2>Transformarea temperaturii</h2>
+                        <p>Biletul nr. 24</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" class="number" id="initial-temperature" oninput="updateFinal()">
+                        <select id="initial-scale" onchange="updateFinal()">
+                            <option value="C">°C</option>
+                            <option value="F">°F</option>
+                            <option value="K">°K</option>
+                            <option value="R">°R</option>
+                        </select>
+                    </td>
+
+                    <td class="arrowCell">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
+                        </svg>
+                    </td>
+
+                    <td>
+                        <input type="number" class="number" id="final-temperature" oninput="updateInitial()">
+                        <select id="final-scale" onchange="updateFinal()">
+                            <option value="C">°C</option>
+                            <option value="F">°F</option>
+                            <option value="K">°K</option>
+                            <option value="R">°R</option>
+                        </select>
+                    </td>
+
+                    <td class="resetCell">
+                        <input type="reset">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+
+</html>

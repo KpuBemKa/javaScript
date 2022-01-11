@@ -1,0 +1,269 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+p{
+    text-align: center;
+}
+div{
+    padding: 0;
+    margin: 0;
+}
+.next:hover{
+    background-color: rgb(63, 63, 63);
+}
+.prev:hover{
+    background-color: rgb(63, 63, 63);
+}
+h3{
+    padding: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin: 0;
+    color: rgb(41, 104, 158);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* mobile screen */
+@media screen and (max-width:800px) {
+    .image {
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+/* header */
+.dMenu{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    padding-left: 15%;
+}
+.dSearch{
+    position: absolute;
+    right: 20%;
+    float: right;
+}
+.dTop{
+    position: relative;
+    background-color: rgb(41, 41, 41);
+}
+.dNav{
+    position: relative;
+    display: block;
+    padding-left: 25px;
+}
+.menu{
+    color: white;
+    font-family: Montserrat;
+    text-decoration: none;
+    padding: 7px 5px 7px 5px;
+    margin: 0px 5px 0px 5px;
+}
+.menu:hover{
+    background-color: rgb(63, 63, 63);
+}
+#logo{
+    height: 64px;
+    width: 64px;
+}
+#search{
+    border: none;
+    border-radius: 2px;
+    padding: 5px 0 5px 10px;
+}
+#submitSearch{
+    border: none;
+    border-radius: 2px;
+    padding: 5px 8px 5px 8px;
+}
+#submitSearch:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+/* gallery */
+
+.gallery-body{
+    margin-top: 0;
+    height: 1000px; 
+}
+.gallery{
+    position: relative;
+    border: 0;
+    margin: 300px auto 50px auto;
+    height: 300px;
+    width: 50%;
+}
+.prev, .next {
+    color: white;
+    font-family: Montserrat;
+    text-decoration: none;
+    padding: 7px 5px 7px 5px;
+    margin: 0px 5px 0px 5px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 104px;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+.prev-div{
+    position: absolute;
+    z-index: 2;
+    width: 10%;
+    height: 300px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 100%);
+}
+.next-div{
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    width: 10%;
+    height: 300px;
+    background: linear-gradient(-90deg, rgba(0,0,0,0.4) 0%, rgba(255,255,255,0) 100%);
+}
+.bottom-text{
+    text-align: center;
+    margin: 0px auto 0px auto;
+    width: 70%;
+    height: 8%;
+}
+#title{
+    display: inline-block;
+    font-size: 3em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+#register{
+    border: 2px solid rgb(41, 104, 158);
+    background-color: rgb(46, 115, 175);
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    padding: 5px 10px 5px 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+#register:hover{
+    background-color: rgb(41, 104, 158);
+}
+
+/* Description */
+.content{
+    position: relative;
+    margin: 0px auto;
+    width: 70%;
+}
+.title{
+    width: fit-content;
+    position: relative;
+    margin: 50px auto 0px auto;
+}
+.drivers{
+    align-items: center;
+}
+.image{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 33%;
+}
+.names{
+    align-items: center;
+}
+.driver-name{
+    text-align: center;
+    display: inline-block;
+    width: 33%;
+    margin: 0 auto;
+}
+#primary-title{
+    display: inline;
+}
+#secondary-title{
+    color: darkgrey;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+
+/* Manufacturers */
+.additional{
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #9acd32;
+}
+.internal{
+    width: 70%;
+    position: relative;
+    margin: 50px auto;
+}
+.logo{
+    align-items: center;
+    width: 33%;
+}
+.manuf-logo{
+    border: 5px solid #a1a1a1;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+}
+.descr{
+    margin: 0 20px;
+}
+.button{
+    margin: 0 auto;
+    border: none;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: #666666;
+    border-radius: 3px;
+}
+
+/* footnote */
+.text{
+    width: fit-content;
+    margin: 0 auto;
+}
+.bottom{
+    margin: 50px 0;
+}
+.link{
+    color: black;
+    font-family: Montserrat;
+    text-decoration: none;
+    padding: 7px 5px 7px 5px;
+    margin: 0px 5px 0px 5px;
+}
+
+.content{
+    text-align: center;
+    margin: 0px auto 0px auto;
+    width: 100%;
+    height: 100%;
+}
+
+#image{
+    height: 300px;
+}
