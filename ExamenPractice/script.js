@@ -50,5 +50,3 @@ function updateInitial() {
 
     document.querySelector("#initial-temperature").value = transformTemperature(+initialTemperature, initialScale, finalScale);
 }
-
-alert(parseInt("4+5"));
